@@ -38,7 +38,7 @@ jobs:
       - name: SCP Files
       # You may pin to the exact commit or the version.
       # uses: appleboy/scp-action@b476d5806f2a4c1ed5902a87fa91b0623cac7258
-      - uses: appleboy/scp-action@v0.0.1
+        uses: appleboy/scp-action@v0.0.1
         with:
           host: ${{ secrets.WHOST }}
           username: ${{ secrets.WUSERNAME }}
@@ -46,4 +46,5 @@ jobs:
           port: ${{ secrets.WPORT }}
           # source: "tests/a.txt,tests/b.txt"
           source: "./*.html"
-          target: "/var/www/html/gfo/premiersite"
+          target: "/var/www/html/gfo/premiersite/"
+

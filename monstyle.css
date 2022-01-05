@@ -6,6 +6,11 @@ h1 {
     border : 1px solid green;
 }
 
+#nav {
+    border : 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
 .prompt {
     color:yellow;
 }

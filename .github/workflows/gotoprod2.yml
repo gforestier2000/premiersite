@@ -45,6 +45,6 @@ jobs:
           password: ${{ secrets.WPASSWORD }}
           port: ${{ secrets.WPORT }}
           # source: "tests/a.txt,tests/b.txt"
-          source: "./*.html, ./*.css"
+          source: "./*.html, ./*.css, ./img/*"
           target: "/var/www/html/gfo/premiersite/"
 

@@ -86,4 +86,12 @@ h1 {
     border-top: 3px solid red;
     border-bottom: 3px solid red;
     text-align:center;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
 }

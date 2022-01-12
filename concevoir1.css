@@ -1,0 +1,54 @@
+body {
+    background-color: darkslategray;
+}
+#nav{
+    border : 5px solid red;
+    margin : 20px;
+    width : 100%;
+}
+
+#search{
+    border : 5px solid blue;
+    margin : 20px;
+
+}
+
+#promodujour{
+    border : 5px solid red;
+    margin : 20px;
+
+}
+
+
+#containercartes{
+    border : 5px solid red;
+    margin : 20px;
+    display: flex;
+
+}
+        
+.carte{
+    border : 5px solid green;
+    margin : 20px;
+
+}
+
+.carteimage{
+    border : 5px solid yellow;
+    margin : 20px;
+
+}
+
+.cartetexte{
+    border : 5px solid yellow;
+    margin : 20px;
+
+}
+
+#pieddepage{
+    border : 5px solid red;
+    background-color: black;
+    color:forestgreen;
+    margin : 20px;
+    width : 100%;
+}

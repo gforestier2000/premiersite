@@ -1,5 +1,5 @@
 body {
-    background-color: darkslategray;
+    background-color: lightcyan;
 }
 #nav{
     border : 5px solid red;
@@ -12,7 +12,7 @@ body {
 
 #search{
     border : 5px solid blue;
-    margin : 75px 20px 20px 20px;
+    margin : 75 px 20px 20px 20px;
 
 }
 

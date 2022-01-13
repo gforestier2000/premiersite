@@ -1,0 +1,72 @@
+body {
+    background-color: lightcyan;
+}
+#nav{
+    border : 5px solid red;
+    margin : 0px;
+    top:0vh;
+    left:0vw;
+    position: fixed;
+    width:99vw;
+}
+
+#search{
+    border : 5px solid blue;
+    margin : 75 px 20px 20px 20px;
+
+}
+
+#promodujour{
+    border : 5px solid red;
+    margin : 20px;
+
+}
+
+
+#containercartes{
+    border : 5px solid red;
+    margin : 20px;
+    display: flex;
+
+}
+        
+.carte{
+    border : 5px solid green;
+    margin : 20px;
+
+}
+
+.carteimage{
+    border : 5px solid yellow;
+    margin : 20px;
+
+}
+
+.cartetexte{
+    border : 5px solid yellow;
+    margin : 20px;
+
+}
+
+#pieddepage{
+    border : 5px solid red;
+    background-color: black;
+    color:forestgreen;
+    margin : 20px;
+    width : 100%;
+}
+
+/* Les média queries */
+
+@media screen and (max-width: 576px)
+{
+    /* Rédigez vos propriétés CSS ici */
+    #containercartes{
+        border : 5px solid violet;
+        margin : 20px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+}

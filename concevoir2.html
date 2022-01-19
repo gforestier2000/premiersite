@@ -9,13 +9,30 @@
     <!-- inclure la feuille de style -->
     <link rel="stylesheet" media="screen" type="text/css" href="./concevoir2.css">
     <!-- viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-    <div id="nav"><p>Navigation</p></div>
-    <div id="search"><p>Recherche</p></div>
-    <div id="promodujour"><p>Promo du jour</p></div>
+    <div id="nav">
+        <div class="xmenu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div>
+            <p>Navigation</p>
+        </div>
+        <div>
+            <p>06 81 78 43 56</p>
+        </div>
+    </div>
+    <div id="search">
+        <p>Recherche</p>
+    </div>
+    <div id="promodujour">
+        <p>Promo du jour</p>
+    </div>
     <div id="containercartes">
         <p>Containeur Cartes</p>
         <!-- une carte -->
@@ -31,7 +48,7 @@
         </div>
         <!-- une carte -->
         <div class="carte">
-            <p>Carte1</p>
+            <p>Carte2</p>
             <div class="carteimage">
                 <img src="img/barilla-cappelini-8076800195019_A1L1_961771_S12.png">
             </div>
@@ -42,7 +59,7 @@
         </div>
         <!-- une carte -->
         <div class="carte">
-            <p>Carte2</p>
+            <p>Carte3</p>
             <div class="carteimage">
                 <img src="img/barilla-pesto-rosso-8076809523547_A1N1_3870782_S13.png">
             </div>
@@ -53,8 +70,11 @@
         </div>
 
     </div>
-    <div id="pieddepage"><p>Pied de page</p></div>
+    <div id="pieddepage">
+        <p>Pied de page</p>
+    </div>
 
+    <script type="text/javascript" src="./concevoir2.js"></script>
 </body>
 
 </html>

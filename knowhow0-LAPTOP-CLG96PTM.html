@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- réglons le problème des accents -->
+    <meta charset="utf-8">
+    <!-- titre du site -->
+    <title>Comment faire ?</title>
+    <!-- inclure la feuille de style -->
+    <link rel="stylesheet" media="screen" type="text/css" href="./monstyle.css">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="nav">
+        <p class="compteurjour">prev</p>
+        <p class="compteurjour">J0</p>
+        <p class="compteurjour"><a href="./knowhow1.html">next</a></p>
+    </div>
+    <p>J'ai travaillé sur ce site à partir d'un ordinateur qui sortait de son carton</p>
+    <h1>Equipement matériel et configuration matériel</h1>
+    <p>Globalement : rien à faire. Juste brancher l'ordinateur hp</p>
+    <h1>Initialisation et configuration du système d'exploitation</h1>
+    <p>Là encore trés peu de chose à faire. Il s'agit d'un système d'exploitation windows <br>
+        qui va se configurer tout seul et qui demande des inputs de temps à autre. <br>
+        Le seul point indispensable est de lui fournir une connexion réseau filaire ou WiFi. <br>
+        A la fin on dispose d'un ordinateur avec un compte administrateur. <br>
+        Une remarque. Si comme moi on utilise plusieurs ordinateurs, il est judicieux d'avoir un compte <br>
+        Microsoft et donc d'avoir ses fichiers et son environnement stocké sur OneDrive et non en local <br>
+        sur le l'ordinateur.<br>
+        <a href="https://onedrive.live.com/" target="_blank">https://onedrive.live.com/</a>
+    </p>
+    <h1>Installation des logiciels nécessaires au développement</h1>
+    <h2>Visual Studio Code</h2>
+    <p>Facile à installé et à récupérer à travers le store de Microsoft</p>
+    <h2>Git</h2>
+    <p>L'url de base de GitHub est : <a href="https://github.com" target="_blank">GitHub</a></p>
+    <p><a href="https://git-scm.com/download/win" target="_blank">Git Download</a> </p> 
+    <h2>WinScp</h2>
+    <p>L'url de base est : </p>
+
+    <p>La suite...</p>
+
+    <h1>Premier pas de développement</h1>
+    <p class="keymessage">Règle de base #100 : le code a une valeur il faut le protéger et le gérer</p>
+    <p>On commence à partir d'un repo git. En l'occurrence et à ce jour, aminum a fait le
+        choix d'utiliser GitHub.
+        A partir de votre compte (en créer un si besoin) vous créez un nouveau 'repository': 'premiersite'.
+        Une fois que cette étape est faite, vous vous positionnez dans votre répertoire de developpement
+        et vous faites votre git clone.
+    </p>
+    <p class="commande-output"><span class="prompt">C:\Users\gfore></span></p>
+    <p class="commande-input"><span class="prompt">C:\Users\gfore></span>cd
+        C:\Users\gfore\OneDrive\Documents\...\bootstrap</p>
+    <p class="commande-output"><span class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap></span></p>
+    <p class="commande-input"><span class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap></span>git clone
+        https://github.com/gforestier2000/premiersite.git
+    </p>
+    <p class="commande-output">Cloning into 'premiersite'...<br>
+        remote: Enumerating objects: 4, done.<br>
+        remote: Counting objects: 100% (4/4), done.<br>
+        remote: Compressing objects: 100% (3/3), done.<br>
+        remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0<br>
+        Receiving objects: 100% (4/4), done.<br>
+    </p>
+    <p class="commande-input"><span class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap></span>dir</p>
+    <p class="commande-output">
+        Le volume dans le lecteur C s’appelle Windows<br>
+        Le numéro de série du volume est D4E4-BE06<br>
+        <br>
+        Répertoire de C:\Users\gfore\OneDrive\Documents\...\bootstrap><br>
+        <br>
+        03/01/2022 12:56 DIR .<br>
+        03/01/2022 12:15 DIR ..<br>
+        03/01/2022 12:56 DIR premiersite<br>
+        2 fichier(s) 663 784 octets<br>
+        5 Rép(s) 212 110 966 784 octets libres<br>
+    </p>
+    <p class="commande-input"><span class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap></span>cd premiersite
+    </p>
+    <p class="commande-input"><span
+            class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite></span>dir</p>
+    <p class="commande-output">Le volume dans le lecteur C s’appelle Windows<br>
+        Le numéro de série du volume est D4E4-BE06<br>
+        <br>
+        Répertoire de C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite<br>
+        <br>
+        03/01/2022 12:56 DIR .<br>
+        03/01/2022 12:56 DIR ..<br>
+        03/01/2022 12:56 1 092 LICENSE<br>
+        03/01/2022 12:56 48 README.md<br>
+        2 fichier(s) 1 140 octets<br>
+        2 Rép(s) 212 111 003 648 octets libres<br>
+    </p>
+    <p>A ce stade on quitte la ligne de commande et on utilise VisualStudio Code pour :</p>>
+    <ol>
+        <li>modifier le fichier README.md</li>
+        <li>créer un fichier index.html</li>
+    </ol>
+
+    <p>Une fois ces deux actions faites on reprend la ligne de commande pour faire notre premier push vers le
+        repository Git sur Github.
+    </p>
+    <p class="commande-input"><span
+            class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite></span>git status
+    </p>
+    <p class="commande-output">On branch main<br>
+        Your branch is up to date with 'origin/main'.<br>
+        <br>
+        Changes not staged for commit:<br>
+        &nbsp;&nbsp;(use "git add &lsaquo;file&rsaquo;..." to update what will be committed)<br>
+        &nbsp;&nbsp;(use "git restore &lsaquo;file&rsaquo;..." to discard changes in working directory)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;modified: <span class="red">README.md</span><br>
+        <br>
+        Untracked files:<br>
+        &nbsp;&nbsp;(use "git add &lsaquo;file&rsaquo;..." to include in what will be committed)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="red">index.html</span><br>
+        <br>
+        no changes added to commit (use "git add" and/or "git commit -a")<br>
+    </p>
+    <p>
+        git status nous permet de voir que 1 fichier a été modifié (README.md) et qu'un fichier n'est pas encore suivi
+        dans git.
+        Notre action est de rajouter (add) toutes ces modifications dans le suivi git local et de vérifier le statut.
+    </p>
+    <p class="commande-input"><span
+            class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite></span>git add *</p>
+    <p class="commande-input"><span
+            class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite></span>git status</p>
+    <p class="commande-output">
+        On branch main<br>
+        Your branch is up to date with 'origin/main'.<br>
+        <br>
+        Changes to be committed:<br>
+        &nbsp;&nbsp;(use "git restore --staged &lsaquo;file&rsaquo;..." to unstage)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">modified: README.md</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">new file: index.html</span><br>
+        <br>
+        <br>
+    </p>
+    <p>
+        Après avoir ajouté les différents fichiers dans le suivi git local, on effectue un commit avec un message. Il se
+        peut que la première fois nous rencontrions une erreur :
+    </p>
+    <p class="commande-input"><span
+            class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite></span>git commit -m"Ajout
+        index.html"</p>
+    <p class="commande-output">
+        Author identity unknown<br>
+        <br>
+        *** Please tell me who you are.<br>
+        <br>
+        Run<br>
+        <br>
+        git config --global user.email "you@example.com"<br>
+        git config --global user.name "Your Name"<br>
+        <br>
+        to set your account's default identity.<br>
+        Omit --global to set the identity only in this repository.<br>
+        <br>
+        fatal: unable to auto-detect email address (got 'gfore@BLACKMAMBA.(none)')<br>
+    </p>
+    <p>Pour résoudre ce problème d'identité il suffit d'effectuer les deux commandes recommandées par git :</p>
+    <p class="commande-input"><span
+            class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite></span>git config --global
+        user.email "gforestier2000@yahoo.fr"</p>
+    <p class="commande-input"><span
+            class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite></span>git config --global
+        user.name "gforestier2000"</p>
+
+    <p>Il suffit de relancer le git commit : </p>
+    <p class="commande-input"><span
+            class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite></span>git commit -m"Ajout
+        index.html"</p>
+    <p class="commande-output">
+        [main 6b88d04] Ajout index.html<br>
+        2 files changed, 2 insertions(+)<br>
+        create mode 100644 index.html<br>
+        <br>
+    </p>
+    <p>dknpkzjvnj</p>
+    <p class="commande-input"><span
+            class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite></span>git push</p>
+    <p class="commande-output">
+        info: please complete authentication in your browser...<br>
+        Enumerating objects: 6, done.<br>
+        Counting objects: 100% (6/6), done.<br>
+        Delta compression using up to 4 threads<br>
+        Compressing objects: 100% (3/3), done.<br>
+        Writing objects: 100% (4/4), 380 bytes | 380.00 KiB/s, done.<br>
+        Total 4 (delta 0), reused 0 (delta 0), pack-reused 0<br>
+        To https://github.com/gforestier2000/premiersite.git<br>
+        c7a254a..6b88d04 main -> main<br>
+        <br>
+        <br>
+    </p>
+
+    <p>on vérifie que tout va bien </p>
+    <p class="commande-input"><span
+            class="prompt">C:\Users\gfore\OneDrive\Documents\...\bootstrap\premiersite></span>git status</p>
+    <p class="commande-output">
+        On branch main<br>
+        Your branch is up to date with 'origin/main'.<br>
+        <br>
+        nothing to commit, working tree clean<br>
+        <br>
+    </p>
+</body>
+
+</html>
